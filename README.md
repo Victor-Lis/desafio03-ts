@@ -34,4 +34,4 @@ desenvolvido por [Nathally Souza](https://github.com/nathyts)
   - Caso a usuária não esteja logada, deve ser mantida na página com a tela de login
   - Escreva os testes unitários para as funções criadas ou refatoradas.
 
-[ ] Fazer o deploy no Netlify e compartilhar o link da página
+[ X ] Fazer o deploy no Netlify e compartilhar o link da página
