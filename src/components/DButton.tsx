@@ -1,11 +1,12 @@
 import { Button } from "@chakra-ui/react"
-import { MouseEventHandler } from "react"
+import type { MouseEventHandler } from "react"
 
 interface IDButton {
-    onClick: MouseEventHandler
+    onClick: MouseEventHandler,
+    message?: string,
 }
 
-export const DButton = ({ onClick }: IDButton) => {
+export const DButton = ({ onClick, message }: IDButton) => {
     return(
         <Button
           onClick={onClick}
@@ -14,7 +15,7 @@ export const DButton = ({ onClick }: IDButton) => {
           width="100%"
           marginTop="5px"
         >
-          Entrar
+          {message ? message : "Entrar"}
         </Button>
     )
 }

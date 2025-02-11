@@ -48,8 +48,8 @@ const Conta = () => {
                         </Center>
                     ) : 
                     (
-                        <>
-                            <CardInfo mainContent={`Bem vinda ${userData?.name}`} content={`${actualData.getDay()} / ${actualData.getMonth()} / ${actualData.getFullYear()} ${actualData.getHours()}:${actualData.getMinutes()}`} />
+                        <>  
+                            <CardInfo onClick={() => navigate("/infoconta")} mainContent={`Bem vindo ${userData?.name}`} content={`${actualData.getDate()} / ${actualData.getMonth()+1} / ${actualData.getFullYear()} ${actualData.getHours()}:${actualData.getMinutes()}`} />
                             <CardInfo mainContent='Saldo' content={`R$ ${userData.balance}`}/>
                         </>
                     )

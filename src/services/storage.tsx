@@ -1,5 +1,8 @@
 interface IDIoBank {
     login: boolean;
+    email: string;
+    password: string;
+    name: string;
 }
 
 const dioBank = {
